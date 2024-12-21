@@ -61,7 +61,7 @@ h3 {
 }
 
 nav h4 {
-    font-size: 3vw;
+    font-size: 1vw;
     font-weight: 100;
     margin: 0;
 }
@@ -89,6 +89,7 @@ nav h3, nav h4 {
     font-family: 'Verdana', Geneva, Tahoma, sans-serif;
     color: white;
     right: 2%;
+    left:4%   
 }
 
 .headline-container h1 span {
