@@ -63,27 +63,32 @@ nav h4 {
     font-weight: 100;
     margin: 0;
 }
+nav h3, nav h4 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 100;
+    margin: 0;
+}
 
 .headline-container {
-
     position: absolute;
     bottom: 30%;
     left: 75%;
     transform: translateX(-50%);
     text-align: center;
     width: 100%;
-    }
+    max-width: 1200px; /* Prevent excessive width */
+}
   
 
-    .headline-container h1 {
-        display: flex;
-        flex-direction: column;
-        font-size: 15vw;
-        font-family: 'Verdana', Geneva, Tahoma, sans-serif;
-        color: white;
-        align-items: center;
-        right: 3%;
-        }
+   .headline-container h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(3rem, 15vw, 12rem); /* Min, preferred, max sizes */
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    color: white;
+    align-items: center;
+    right: 3%;
+}
 
 .headline-container h1 span {
     display: block;
@@ -96,13 +101,13 @@ nav h4 {
     position: relative;
     display: flex;
     flex-direction: column;
-    font-size: 3vw;
+    font-size: clamp(1rem, 3vw, 2.5rem);
     font-family: 'Verdana', Geneva, Tahoma, sans-serif;
     color: white;
     margin-top: 10%;
     left: 10%;
     font-weight: 100;
-  }
+}
 
 #page-1contant h2 span {
     display: block;
@@ -110,6 +115,63 @@ nav h4 {
     transform: translateY(200px) scale(0.8);
     animation: slideInVertically 1.2s ease-out forwards;
 }
+@media screen and (max-width: 1024px) {
+    .headline-container {
+        bottom: 25%;
+        left: 70%;
+    }
+    
+    .headline-container h1 {
+        font-size: clamp(2.5rem, 12vw, 10rem);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headline-container {
+        bottom: 20%;
+        left: 50%;
+    }
+    
+    .headline-container h1 {
+        font-size: clamp(2rem, 10vw, 8rem);
+    }
+    
+    .headline-container h1 h2 {
+        font-size: clamp(0.875rem, 2.5vw, 1.75rem);
+    }
+}
+
+/* Animation fixes */
+.headline-container h1 span {
+    display: block;
+    opacity: 0;
+    transform: translateY(50px) scale(0.8);
+    animation: slideInVertically 1.2s ease-out forwards;
+}
+
+@keyframes slideInVertically {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Sequential animation timing */
+#page-1contant h1 span:nth-child(1) { animation-delay: 0.3s; }
+#page-1contant h1 span:nth-child(2) { animation-delay: 0.9s; }
+#page-1contant h1 span:nth-child(3) { animation-delay: 1.5s; }
+
+
+
+
+
+
+
+
 
 /* Sequential animation for each span of h1 */
 #page-1contant h1 span:nth-child(1) { animation-delay: 0.3s; }
