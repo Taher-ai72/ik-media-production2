@@ -74,22 +74,20 @@ nav h3, nav h4 {
 .headline-container {
     position: absolute;
     bottom: 30%;
-    left: 75%;
+    left: 50%; /* Center the container horizontally */
     transform: translateX(-50%);
     text-align: center;
     width: 100%;
     max-width: 1200px; /* Prevent excessive width */
 }
-  
 
-   .headline-container h1 {
+.headline-container h1 {
     display: flex;
     flex-direction: column;
-    font-size: 4vw; /* Min, preferred, max sizes */
+    font-size: 4vw; /* Adjust the font size */
     font-family: 'Verdana', Geneva, Tahoma, sans-serif;
     color: white;
-    right: 2%;
-    left:4%   
+    margin: 0 auto; /* Center the h1 horizontally */
 }
 
 .headline-container h1 span {
