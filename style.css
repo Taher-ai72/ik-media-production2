@@ -61,7 +61,7 @@ h3 {
 }
 
 nav h4 {
-    font-size: 1vw;
+    font-size: 1vw !important;
     font-weight: 100;
     margin: 0;
 }
