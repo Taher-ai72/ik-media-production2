@@ -381,7 +381,7 @@ text-align: center;
     text-decoration: underline;
 }
 #page-1{
-    background-image: url(./image/page-1\ background\ img.png);}
+    background-image: url(/ik-media-production2/image/page-1\ background\ img.png);}
 
     @media screen and (max-width: 1048px) {
         #page-1 video {
