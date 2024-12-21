@@ -74,7 +74,7 @@ nav h3, nav h4 {
 .headline-container {
     position: absolute;
     bottom: 30%;
-    left: 50%; /* Center the container horizontally */
+    left: 80%; /* Center the container horizontally */
     transform: translateX(-50%);
     text-align: center;
     width: 100%;
