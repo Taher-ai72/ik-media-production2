@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight:100;
+    font-size:4vw;
 }
 
 html, body {
@@ -84,10 +85,9 @@ nav h3, nav h4 {
    .headline-container h1 {
     display: flex;
     flex-direction: column;
-    font-size: 7vw; /* Min, preferred, max sizes */
+    font-size: 4vw; /* Min, preferred, max sizes */
     font-family: 'Verdana', Geneva, Tahoma, sans-serif;
     color: white;
-    align-items: center;
     right: 2%;
 }
 
@@ -96,6 +96,7 @@ nav h3, nav h4 {
     opacity: 0;
     transform: translateY(50px) scale(0.8);
     animation: slideInVertically 1.2s ease-out forwards;
+    font-size: 4vw;
 }
 
 .headline-container h1 h2 {
