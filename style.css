@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:100;
 }
 
 html, body {
@@ -159,15 +160,6 @@ nav h3, nav h4 {
         transform: translateY(0) scale(1);
     }
 }
-
-/* Sequential animation timing */
-#page-1contant h1 span:nth-child(1) { animation-delay: 0.3s; }
-#page-1contant h1 span:nth-child(2) { animation-delay: 0.9s; }
-#page-1contant h1 span:nth-child(3) { animation-delay: 1.5s; }
-
-
-
-
 
 
 
